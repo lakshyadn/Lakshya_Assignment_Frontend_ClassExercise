@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Item List (Add & Delete)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app" role="application" aria-labelledby="title">
+    <header>
+      <h1 id="title">Task List</h1>
+      <p class="muted"></p>
+    </header>
+
+    <form id="item-form" autocomplete="off" aria-label="Add new item">
+      <input id="item-input" type="text" placeholder="Add Task" aria-label="Item name" required />
+      <button class="btn-primary" type="submit">Add</button>
+    </form>
+
+    <ul id="list" aria-live="polite" aria-relevant="additions removals"></ul>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
